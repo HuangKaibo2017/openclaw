@@ -24,11 +24,6 @@ export default defineConfig(() => {
   return {
     base,
     publicDir: path.resolve(here, "public"),
-    define: {
-      "process.env": "{}",
-      "process.cwd": '() => "/"',
-      "process.getuid": "() => undefined",
-    },
     optimizeDeps: {
       include: ["lit/directives/repeat.js"],
     },
